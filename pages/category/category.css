@@ -47,14 +47,6 @@ body {
   padding: 2rem;
 }
 
-.category-item img {
-  width: 100%;
-  /* width: 355px; */
-  height: 308px;
-
-  object-fit: cover;
-}
-
 .category-item a {
   color: var(--subColor3);
   text-align: center;
@@ -65,6 +57,10 @@ body {
 }
 
 .category-item a img {
+  width: 100%;
+  min-width: 340px;
+  height: 308px;
   display: block;
+  object-fit: cover;
   margin-bottom: var(--mdDis);
 }

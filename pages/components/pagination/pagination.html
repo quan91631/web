@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="pagination.css">
+    <script src="pagination.js" defer></script>
+</head>
+<body>
+    <div class="pagination">
+        <button class="pagination__btn" id="prevBtn">&lt;</button>
+        
+        <div class="pagination__numbers">
+            <!-- Desktop view -->
+            <div class="pagination__desktop">
+                <span class="pagination__number active">1</span>
+                <span class="pagination__number">2</span>
+                <span class="pagination__number">3</span>
+                <span class="pagination__number">4</span>
+                <span class="pagination__number">5</span>
+                <span class="pagination__number">6</span>
+            </div>
+            
+            <!-- Mobile view -->
+            <div class="pagination__mobile">
+                <span class="pagination__current">1/20</span>
+            </div>
+        </div>
+
+        <button class="pagination__btn" id="nextBtn">&gt;</button>
+    </div>
+
+    <script src="pagination.js"></script>
+</body>
+</html>

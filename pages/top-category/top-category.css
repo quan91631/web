@@ -20,7 +20,6 @@ body {
 }
 
 .top-category-header {
-  font-family: Yapari Trial;
   background-color: var(--subColor3);
   color: var(--mainColor2);
   display: flex;

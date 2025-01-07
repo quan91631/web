@@ -1,0 +1,86 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pagination__btn {
+  border: none;
+  background: #f0f0f0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.pagination__btn:hover {
+  background: #e0e0e0;
+}
+
+.pagination__numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination__number {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.pagination__number:hover {
+  background: #f0f0f0;
+}
+
+.pagination__number.active {
+  background: var(--mainColor2);
+  color: white;
+}
+
+.pagination__mobile {
+  display: none;
+}
+
+/* Hide mobile view by default (small screens) */
+.pagination__desktop {
+    display: none;
+}
+
+.pagination__mobile {
+    display: block;
+}
+
+/* Desktop view */
+@media screen and (min-width: 768px) {
+    .pagination__desktop {
+        display: flex;
+    }
+
+    .pagination__mobile {
+        display: none;
+    }
+
+    .pagination__btn{
+        display: none;
+    }
+}
