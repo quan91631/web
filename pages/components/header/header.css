@@ -1,0 +1,234 @@
+:root {
+    --fsBody: 1.8rem;
+    --fsHeadingMobile:2.9rem; --fsHeadingTabletDesktop: 3.5rem;
+    --xsDis: 4px; --smDis:8px; --mdDis:16px; --lgDis:32px; --xlDis: 64px;
+    --mainColor1: #494949; --mainColor2: #000000;
+    --subColor1: #838383; --subColor2: #cdcdcd;
+    --subColor3: #ffffff;
+}
+
+body{
+    margin: 0;
+}
+
+.header {
+    padding: 1rem 2rem;
+    background: var(--mainColor1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 2rem;
+}
+.primary-navigation {
+    justify-self: center;
+    z-index: 9999;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--subColor3);
+    font-weight: 500;
+}
+
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--subColor3);
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+/* Hamburger animation when menu is open */
+.mobile-nav-toggle[aria-expanded="true"] .hamburger span:first-child {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Hamburger default state */
+.mobile-nav-toggle[aria-expanded="false"] .hamburger span {
+    transform: rotate(0);
+    opacity: 1;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.logo{
+    height: 50px;
+    max-width: 200px;
+}
+
+.search-icon{
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--mainColor2);
+    top: 50%;
+}
+
+/* Mobile styles (base styles) */
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.mobile-nav-toggle {
+    display: block;
+    z-index: 9999;
+    order: 1;
+}
+
+.logo {
+    order: 2;
+    text-align: center;
+}
+
+.right-container {
+    order: 3;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 150px;
+}
+
+.primary-navigation {
+    position: fixed;
+    inset: 0 90% 0 0;
+    background: var(--mainColor1);
+    padding: min(30vh, 10rem) 2rem;
+    width: 100%;
+    transition: transform 350ms ease-out;
+}
+
+/* When data-visible is false, hide the navigation */
+.primary-navigation[data-visible="false"] {
+    transform: translateX(-100%);
+}
+
+/* When data-visible is true, show the navigation */
+.primary-navigation[data-visible="true"] {
+    transform: translateX(0);
+}
+
+.nav-list {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .header {
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+
+    .mobile-nav-toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .right-container {
+        order: 0;
+    }
+
+    .primary-navigation {
+        position: static;
+        padding: 0;
+        transform: none;
+        width: auto;
+        inset: auto;
+    }
+
+    /* Remove transform on desktop regardless of data-visible value */
+    .primary-navigation[data-visible="false"],
+    .primary-navigation[data-visible="true"] {
+        transform: none;
+    }
+
+    .nav-list {
+        flex-direction: row;
+    }
+}
+
+/* Add these new styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-self: end;
+    position: relative;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.search-button:hover {
+    color: #666;
+}
+
+.right-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--subColor3);
+}

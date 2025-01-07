@@ -1,0 +1,58 @@
+:root {
+    --fsBody: 1.8rem;
+    --fsHeadingMobile: 2.9rem;
+    --fsHeadingTabletDesktop: 3.5rem;
+    --xsDis: 4px;
+    --smDis: 8px;
+    --mdDis: 16px;
+    --lgDis: 32px;
+    --xlDis: 64px;
+    --mainColor1: #494949;
+    --mainColor2: #000000;
+    --subColor1: #838383;
+    --subColor2: #cdcdcd;
+    --subColor3: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: var(--fsHeadingMobile);
+}
+
+p {
+    font-size: var(--fsBody);
+}
+
+.about-us-container {
+    background-color: var(--mainColor2);
+    color: var(--subColor3);
+    padding: var(--mdDis);
+    width: auto;
+    box-sizing: border-box;
+}
+
+.first-row, .second-row, .third-row {
+    background-color: var(--mainColor2);
+    display: flex;
+    gap: var(--mdDis);
+    flex-wrap: wrap;
+}
+
+.first-row-left,
+.first-row-right,
+.second-row-left,
+.second-row-right {
+    flex: 1;
+    width: calc(50% - var(--mdDis)/2);
+    min-width: 300px;
+}

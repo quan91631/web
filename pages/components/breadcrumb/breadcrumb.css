@@ -1,0 +1,64 @@
+:root {
+    --fsBody: 1.8rem;
+    --fsHeadingMobile: 2.9rem;
+    --fsHeadingTabletDesktop: 3.5rem;
+    --xsDis: 4px;
+    --smDis: 8px;
+    --mdDis: 16px;
+    --lgDis: 32px;
+    --xlDis: 64px;
+    --mainColor1: #494949;
+    --mainColor2: #000000;
+    --subColor1: #838383;
+    --subColor2: #cdcdcd;
+    --subColor3: #ffffff;
+  }
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.breadcrumb {
+    background-color: rgba(255,255,255,0.6);
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    font-size: var(--fsBody);
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "›";
+    margin: 0 0.5rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #666;
+}
+
+.breadcrumb a:hover {
+    color: #333;
+}
+
+.breadcrumb .active {
+    color: #333;
+    font-weight: 700;
+}

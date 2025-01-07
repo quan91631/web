@@ -1,0 +1,70 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+.category-header {
+  position: relative;
+  background-color: var(--mainColor1);
+}
+.category-nav {
+  padding: 2rem;
+  text-align: center;
+  background: var(--mainColor2);
+}
+
+.category-nav a {
+  color: var(--subColor3);
+  font-size: 2rem;
+}
+
+.categories {
+  padding: 2rem;
+  background: var(--mainColor1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.category-item {
+  flex: 1 1 calc(33.333% - 2rem);
+  padding: 2rem;
+}
+
+.category-item img {
+  width: 100%;
+  /* width: 355px; */
+  height: 308px;
+
+  object-fit: cover;
+}
+
+.category-item a {
+  color: var(--subColor3);
+  text-align: center;
+  margin-top: var(--mdDis);
+  font-size: 2rem;
+  display: block;
+  text-decoration: underline;
+}
+
+.category-item a img {
+  display: block;
+  margin-bottom: var(--mdDis);
+}

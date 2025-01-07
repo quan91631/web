@@ -1,0 +1,130 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: var(--mainColor2);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--subColor3);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--mdDis);
+  justify-content: center;
+}
+
+.map-section {
+  padding-left: 0;
+}
+
+.map-section > * {
+  margin-bottom: 1rem;
+}
+
+.contact-info h3,
+.working-time h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-info ul {
+  padding-left: 1rem;
+}
+
+.contact-info ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+}
+
+.working-time div {
+  padding-left: 1rem;
+}
+
+.form-section {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.form-container {
+  border: 1px solid white;
+  height: 100%;
+  padding: 2rem 1.25rem;
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+input {
+  padding: 0.5rem 1rem;
+}
+
+button {
+  width: 100%;
+  background-color: #494949;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+/* Mobile styles (base styles) */
+.container {
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+/* Desktop styles */
+@media (min-width: 1281px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .map-section {
+    width: 50%;
+    height: 100%;
+    padding-left: 5rem;
+  }
+}

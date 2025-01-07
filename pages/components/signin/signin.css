@@ -1,0 +1,83 @@
+:root {
+    --fsBody: 1.8rem;
+    --fsHeadingMobile:2.9rem; --fsHeadingTabletDesktop: 3.5rem;
+    --xsDis: 4px; --smDis:8px; --mdDis:16px; --lgDis:32px; --xlDis: 64px;
+    --mainColor1: #494949; --mainColor2: #000000;
+    --subColor1: #838383; --subColor2: #cdcdcd;
+    --subColor3: #ffffff;
+}  
+
+body{
+    margin: 0;
+}   
+
+.sign-in-container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--subColor3);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-content{
+    max-width: 500px;
+    padding: var(--lgDis);
+    background-color: var(--mainColor2);
+    border-radius: var(--smDis);
+    color: var(--subColor3);
+}
+
+.input-group {
+    margin-bottom: var(--mdDis);
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: var(--xsDis);
+    font-size: var(--fsBody);
+}
+
+.input-group input {
+    width: 100%;
+    padding: var(--smDis);
+    font-size: var(--fsBody);
+    border: 1px solid var(--subColor1);
+    border-radius: var(--xsDis);
+    background-color: var(--subColor3);
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.show-password-btn {
+    position: absolute;
+    right: var(--smDis);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--xsDis);
+    color: var(--mainColor2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: var(--smDis);
+    margin-top: var(--mdDis);
+    background-color: var(--subColor3);
+    color: var(--mainColor2);
+    border: none;
+    border-radius: var(--xsDis);
+    font-size: var(--fsBody);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--subColor2);
+}
+

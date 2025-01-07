@@ -1,0 +1,75 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: var(--mainColor2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--subColor3);
+}
+
+.faq-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.faq-item {
+  flex: 1;
+}
+
+.faq-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--subColor2);
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-weight: bold;
+}
+
+.faq-content {
+  display: none;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.faq-content.active {
+  display: block;
+}

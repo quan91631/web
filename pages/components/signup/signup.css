@@ -1,0 +1,91 @@
+:root {
+    --fsBody: 1.8rem;
+    --fsHeadingMobile:2.9rem; --fsHeadingTabletDesktop: 3.5rem;
+    --xsDis: 4px; --smDis:8px; --mdDis:16px; --lgDis:32px; --xlDis: 64px;
+    --mainColor1: #494949; --mainColor2: #000000;
+    --subColor1: #838383; --subColor2: #cdcdcd;
+    --subColor3: #ffffff;
+}  
+
+body{
+    margin: 0;
+}   
+
+.sign-up-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--mdDis);
+}
+
+.sign-up-content {
+  background-color: var(--mainColor2);
+  padding: var(--lgDis);
+  border-radius: var(--smDis);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.sign-up-content h1 {
+  color: var(--subColor3);
+  margin-bottom: var(--lgDis);
+  font-size: var(--fsHeadingMobile);
+}
+
+.form-group {
+  margin-bottom: var(--mdDis);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--xsDis);
+  color: var(--subColor3);
+  font-size: var(--fsBody);
+}
+
+.form-group input {
+  width: 100%;
+  padding: var(--smDis);
+  border: 1px solid var(--subColor2);
+  border-radius: var(--xsDis);
+  font-size: var(--fsBody);
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: var(--smDis);
+  background: none;
+  border: none;
+  color: var(--subColor1);
+  cursor: pointer;
+  padding: var(--xsDis);
+  font-size: var(--fsBody);
+}
+
+.toggle-password:hover {
+  color: var(--mainColor1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: var(--smDis);
+  background-color: var(--mainColor1);
+  color: var(--subColor3);
+  border: none;
+  border-radius: var(--xsDis);
+  font-size: var(--fsBody);
+  cursor: pointer;
+  margin-top: var(--mdDis);
+}
+
+.submit-btn:hover {
+  background-color: var(--mainColor2);
+}

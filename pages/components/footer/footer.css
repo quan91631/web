@@ -1,0 +1,205 @@
+*, *::before, *::after {box-sizing: border-box}
+:root {
+    --fsBody: 1.8rem;
+    --fsHeadingMobile:2.9rem; --fsHeadingTabletDesktop: 3.5rem;
+    --xsDis: 4px; --smDis:8px; --mdDis:16px; --lgDis:32px; --xlDis: 64px;
+    --mainColor1: #494949; --mainColor2: #000000;
+    --subColor1: #838383; --subColor2: #cdcdcd;
+    --subColor3: #ffffff;
+}
+/* Footer container */
+footer {
+  background-color: black;
+  color: white;
+  padding: 2.5rem 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0 !important;
+  padding-left: 10px !important;
+}
+
+/* Grid layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Column spacing */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+.footer-heading {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Link lists */
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-list a {
+  color: var(--subColor1);
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: white;
+}
+
+/* Icons */
+.footer-list i {
+  margin-right: 0.5rem;
+}
+
+/* Social Media */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: var(--subColor1);
+}
+
+/* Email Subscription */
+.email-subscription {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.email-subscription input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #111827;
+  max-width: 12rem;
+}
+
+.email-subscription button {
+  background-color: var(--subColor2);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+  max-width: 6rem;
+}
+
+.email-subscription button:hover {
+  background-color: var(--subColor1);
+}
+
+/* Footer Links */
+.footer-links {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.footer-links a {
+  color: var(--subColor1);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-links span {
+  color: var(--subColor1);
+  margin: 0 1rem;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  color: var(--subColor1);
+  margin-top: 1.5rem;
+}
+
+/* Mobile styles (base styles) */
+.dropdown-icon {
+  display: block !important; /* Show dropdown icons by default on mobile */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-heading {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.footer-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.footer-list.collapsed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.footer-list.expanded {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-trigger.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Tablet and Desktop styles */
+@media (min-width: 768px) {
+  .footer-grid {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  
+  .dropdown-icon {
+    display: none !important;
+  }
+
+  .footer-list {
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    overflow: visible;
+  }
+}
+@media (min-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat (3, 1fr);
+  }
+}

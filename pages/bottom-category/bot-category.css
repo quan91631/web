@@ -1,0 +1,60 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+.top-category-header {
+  font-family: Yapari Trial;
+  background-color: var(--subColor3);
+  color: var(--mainColor2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--mainColor2);
+}
+
+.products-section {
+  padding: 2rem;
+  background: var(--mainColor1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-item {
+  flex: 0 1 calc(33.333% - 2rem);
+  min-width: 300px;
+  padding: 2rem;
+}
+
+.product-item a {
+  color: var(--mainColor2);
+  text-align: center;
+  margin-top: var(--mdDis);
+  font-size: 2rem;
+  display: block;
+  text-decoration: none;
+}
+
+.product-item h1 {
+  font-size: 2rem;
+  color: var(--subColor2);
+  text-align: center;
+}

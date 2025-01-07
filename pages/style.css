@@ -1,0 +1,112 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+body {font-family: Montserrat;}
+a {
+  text-decoration: none !important;
+}
+
+.men-women-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .men-women-section {
+    flex-direction: row;
+  }
+}
+
+.section-half {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-half {
+    width: 50%;
+  }
+}
+
+.section-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.men-link {
+  position: absolute;
+  bottom: 0;
+  right: 56px; /* 14 * 4 for text-4xl equivalent */
+  transform: translate(50%, -50%);
+  font-size: 36px; /* text-4xl equivalent */
+  font-weight: bold;
+  color: black !important;
+}
+
+.women-link {
+  position: absolute;
+  bottom: 0;
+  left: 24px; /* 6 * 4 for left-6 equivalent */
+  transform: translateY(-50%);
+  font-size: 36px; /* text-4xl equivalent */
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Collection Section */
+.collection-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-image {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.collection-content {
+  position: absolute;
+  bottom: 50%;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.collection-title {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.view-more-btn {
+  max-width: 150px;
+  background-color: white;
+  color: #838383;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #838383;
+  color: white;
+}

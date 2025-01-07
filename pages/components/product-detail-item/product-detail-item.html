@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail Item Component</title>
+    <link rel="stylesheet" href="product-detail-item.css" />
+
+    <script src="product-detail-item.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="product-detail-container">
+      <!-- Swiper container -->
+      <div class="swiper-container">
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper">
+            <!-- Swiper slides -->
+            <div class="swiper-slide">
+              <img src="../../assets/img/tee-1.png" alt="LDD Tee" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/tee-2.png" alt="LDD Tee" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/tee-3.png" alt="LDD Tee" />
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="product-detail-info">
+        <h1>LDD Tee</h1>
+        <button class="detail-button">View Details</button>
+      </div>
+    </div>
+  </body>
+</html>

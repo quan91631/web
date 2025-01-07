@@ -1,0 +1,196 @@
+:root {
+  --fsBody: 1.8rem;
+  --fsHeadingMobile: 2.9rem;
+  --fsHeadingTabletDesktop: 3.5rem;
+  --xsDis: 4px;
+  --smDis: 8px;
+  --mdDis: 16px;
+  --lgDis: 32px;
+  --xlDis: 64px;
+  --mainColor1: #494949;
+  --mainColor2: #000000;
+  --subColor1: #838383;
+  --subColor2: #cdcdcd;
+  --subColor3: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: var(--mainColor1);
+}
+
+.product-info {
+  padding: var(--mdDis);
+  color: var(--subColor3);
+}
+
+.product-info-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lgDis);
+}
+
+.product-images {
+  width: 100%;
+  position: relative;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: var(--mdDis);
+  right: var(--mdDis);
+  z-index: 1;
+  background: var(--subColor3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.favorite-btn i {
+  color: var(--subColor1);
+  font-size: 20px;
+}
+
+.favorite-btn i:hover {
+  color: var(--mainColor2);
+}
+
+.product-swiper {
+  width: 100%;
+}
+
+.product-description,
+.size-selector {
+  display: flex;
+  gap: var(--smDis);
+}
+
+.product-description label,
+.size-selector label {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lgDis);
+}
+
+.product-name {
+  text-align: center;
+  font-size: var(--fsHeadingMobile);
+  margin: var(--mdDis) 0;
+}
+
+.size-selector select {
+  width: 100%;
+  padding: var(--smDis);
+  font-size: 13px;
+}
+
+.size-chart {
+  width: 100%;
+  background-color: var(--subColor3);
+}
+
+.size-chart-header {
+  padding-right: 2rem;
+  color: var(--mainColor2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.size-chart h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: var(--smDis);
+}
+
+.size-chart .unit {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: var(--mdDis);
+}
+
+.size-chart table {
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.size-chart th,
+.size-chart td {
+  border-bottom: 1px solid var(--subColor2);
+  padding: var(--smDis) var(--mdDis);
+  text-align: center;
+  font-weight: 500;
+}
+
+.size-chart td + td,
+.size-chart th + th {
+  border-left: 1px solid var(--subColor2);
+}
+
+.size-chart th {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.size-chart .product-type {
+  text-align: left;
+  font-weight: bold;
+}
+
+.size-chart td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.85px;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .product-info-container {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+
+  .product-images {
+    max-width: 50%;
+  }
+
+  .product-details {
+    max-width: 50%;
+  }
+
+  .product-name {
+    font-size: var(--fsHeadingTabletDesktop);
+    margin: 0;
+  }
+
+  .size-chart table {
+    font-size: 14px;
+  }
+}

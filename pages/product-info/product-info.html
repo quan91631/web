@@ -1,0 +1,293 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Info</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+
+    <script src="../../components/header/header.js" defer></script>
+    <script src="../../components/footer/footer.js" defer></script>
+
+    <link rel="stylesheet" href="product-info.css" />
+  </head>
+  <body>
+    <header class="header">
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"2zMjY4IMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMCwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+
+      <div class="logo">
+        <a href="../index.html" class="flex-center link-logo">
+          <img
+            style="width: 100%; height: 100%; object-fit: contain"
+            src="../../assets/img/logo_onlytext_white.png"
+            alt="Logo"
+          />
+        </a>
+      </div>
+
+      <nav class="primary-navigation" id="primary-navigation" data-visible="false">
+        <ul class="nav-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="/category/category.html">SHOP</a></li>
+          <li><a href="#">COLLECTION</a></li>
+          <li><a href="../about-us/about-us.html">ABOUT US</a></li>
+          <li><a href="../../components/faq/faq.html">FAQ</a></li>
+          <li><a href="../contact-us/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="right-container">
+        <div class="search-container">
+          <input type="search" class="search-bar" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <i class="fa-regular fa-heart"></i>
+      </div>
+    </header>
+    <div class="product-info">
+      <div class="product-info-container">
+        <!-- Left Column - Image Swiper -->
+        <div class="product-images">
+          <div class="favorite-btn">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="../../assets/img/tee-1-5.webp"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../../assets/img/tee-1.webp"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../../assets/img/tee-1-2.jpg"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../../assets/img/tee-1-5.jpg"
+                  alt="Product Image"
+                />
+              </div>
+              <!-- Add more swiper-slide divs for additional images -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Right Column - Product Details -->
+        <div class="product-details">
+          <h1 class="product-name">LDD TEE</h1>
+
+          <div class="size-selector">
+            <label for="size">SIZE</label>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+
+          <div class="product-description">
+            <label for="product-description">DESCRIPTION</label>
+            <p style="margin: 0">
+              Material: Cotton 250gsm.
+              <br />
+              Boxy fit, cropped length, moderately deep V-neck with a thick knitted collar.
+              Fuzzy embroidered dragon detail on the chest.
+              LDD T-shirt from The Tiff Draco collection..
+            </p>
+          </div>
+
+          <div class="size-chart">
+            <div class="size-chart-header">
+              <h2>SIZE CHART</h2>
+              <p class="unit">ĐƠN VỊ: CM</p>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th class="product-type">FORM FIT<br />T-SHIRT</th>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>L</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BẢN VAI</td>
+                  <td>58</td>
+                  <td>59</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>DÀI TAY</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>NGANG</td>
+                  <td>54</td>
+                  <td>56</td>
+                  <td>58</td>
+                </tr>
+                <tr>
+                  <td>DÀI</td>
+                  <td>66</td>
+                  <td>68</td>
+                  <td>70</td>
+                </tr>
+                <tr>
+                  <td>NÁCH</td>
+                  <td>28</td>
+                  <td>28</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>CÂN NẶNG</td>
+                  <td>&lt; 66kg</td>
+                  <td>&lt; 75kg</td>
+                  <td>&lt; 83kg</td>
+                </tr>
+                <tr>
+                  <td>CHIỀU CAO</td>
+                  <td>&lt; 173</td>
+                  <td>&lt; 178</td>
+                  <td>&lt; 185</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-grid">
+        <!-- About Us Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading dropdown-trigger">
+            About Us
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </h3>
+          <ul class="footer-list">
+            <li><a href="#" class="text-gray-400 hover:text-white">Mission</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Vision</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">History</a></li>
+          </ul>
+        </div>
+
+        <!-- Collection Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading dropdown-trigger">
+            Collection
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </h3>
+          <ul class="footer-list">
+            <li><a href="#" class="text-gray-400 hover:text-white">2024 Collection</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">2025 Spring</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Column -->
+        <div class="footer-column">
+          <h3 class="footer-heading dropdown-trigger">
+            Contact Us
+            <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </h3>
+          <ul class="footer-list">
+            <li><i class="fa-solid fa-phone mr-2"></i>028.3812.1382</li>
+            <li><i class="fa-solid fa-globe mr-2"></i>https://www.Brilliant.com</li>
+            <li><i class="fa-solid fa-envelope mr-2"></i>Customer@brilliant.com</li>
+            <li><i class="fa-solid fa-location-dot mr-2"></i>268 Cach Mang Thang Tam Street, District 3, Ho Chi Minh City</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="social-media">
+        <a href="#" class="text-white hover:text-gray-400"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="text-white hover:text-gray-400"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="#" class="text-white hover:text-gray-400"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="text-white hover:text-gray-400"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+
+      <!-- Email Subscription -->
+      <div class="email-subscription">
+        <span class="mr-2">Your Email:</span>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="px-3 py-2 rounded text-gray-900"
+        />
+        <button class="bg-[#CDCDCD] hover:bg-[#838383] px-4 py-2 rounded ml-2">
+          Submit
+        </button>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <a href="#" class="text-gray-400 hover:text-white">Accessibility</a>
+        <span class="text-gray-400">|</span>
+        <a href="#" class="text-gray-400 hover:text-white"
+          >Privacy & Security Policy</a
+        >
+        <span class="text-gray-400">|</span>
+        <a href="#" class="text-gray-400 hover:text-white">Terms of Sale</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        Copyright © 2024 Brilliant. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const swiper = new Swiper(".product-swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

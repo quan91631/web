@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <div class="sign-in-container">
+      <form class="sign-in-content">
+        <h1>Login</h1>
+
+        <div class="input-group">
+          <label for="account">Account</label>
+          <input type="text" id="account" name="account" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" required />
+            <button
+              type="button"
+              class="show-password-btn"
+              onclick="togglePassword()"
+            >
+              <i class="fa-regular fa-eye" id="password-toggle-icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Sign In</button>
+      </form>
+    </div>
+
+    <script>
+      function togglePassword() {
+        const passwordInput = document.getElementById("password");
+        const toggleIcon = document.getElementById("password-toggle-icon");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleIcon.className = "fa-regular fa-eye-slash";
+        } else {
+          passwordInput.type = "password";
+          toggleIcon.className = "fa-regular fa-eye";
+        }
+      }
+    </script>
+  </body>
+</html>
